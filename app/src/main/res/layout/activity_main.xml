@@ -36,7 +36,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/dice_1"/>
+        android:src="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"/>
+        <!-- the tools namesapce is used to preview results without seeing them in the app
+        the tools namespace is removed when compiling. This means when previewing, we will see dice_1,
+        but in the actual app, it will display empty_dice
+        the tools namespace is useful to show dummy data during app design-->
 
 
     <Button
