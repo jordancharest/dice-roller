@@ -15,21 +15,30 @@
     tools:context=".MainActivity">
 
 
-    <!--30sp for the textSize stands for 30 scale-independent pixels
-    which means that the text will appear basically the same regardless
-    of the screen size or quality
-    -->
-    <TextView
-        android:id="@+id/result_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Android!"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30sp"/>
+    <!--&lt;!&ndash;30sp for the textSize stands for 30 scale-independent pixels-->
+    <!--which means that the text will appear basically the same regardless-->
+    <!--of the screen size or quality-->
+    <!--&ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/result_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello Android!"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:textSize="30sp"/>-->
 
     <!-- Adding the button view below the text view means the button
     will appear below the text (at least for a LinearLayout)
     -->
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/dice_1"/>
+
+
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
